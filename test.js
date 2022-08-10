@@ -1,14 +1,17 @@
-var myCar2 = {
-  maxSpeed: 70,
-  driver: "Kacpi",
-  drive: function (speed, time) {
+var Car = function (maxSpeed, driver) {
+  this.maxSpeed = maxSpeed;
+  this.driver = driver;
+  this.drive = function (speed, time) {
     console.log(speed * time);
-  },
-  logDriver: function () {
+  };
+  this.logDriver = function () {
     console.log("driver name is " + this.driver);
-  },
+  };
 };
 
-myCar2.logDriver();
-console.log(myCar2.maxSpeed);
-myCar2.drive(50, 3);
+var myCar = new Car(70, "Ninja");
+var myCar2 = new Car(40, "Jon");
+var myCar3 = new Car(50, "Ann");
+
+myCar.drive(50, 3);
+myCar3.logDriver();
