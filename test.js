@@ -1,8 +1,11 @@
-var a = 5;
-var b = 5;
+var myString = 'I\'am a "fun" ninja string';
 
-if (isNaN(a)) {
-  console.log("that aint even a number");
+if (myString.indexOf("ninja") === -1) {
+  console.log("the word ninja is not in the string");
 } else {
-  console.log("meaning of life is  " + a * b);
+  console.log(
+    "the word ninja starts at the position" + myString.indexOf("ninja")
+  );
 }
+console.log(myString.length);
+console.log(myString.toUpperCase());
