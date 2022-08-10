@@ -1,5 +1,5 @@
-var str = "hello, world";
-var str2 = str.slice(2, 9);
-var str3 = str.slice(2);
-var tags = "meta, ham, salami, pork";
-var tagArray = tags.split(",");
+var myArray = [0, 1, 2, 3, "hello"];
+console.log(myArray);
+myArray[4] = "hi";
+myArray.length;
+myArray.sort;
